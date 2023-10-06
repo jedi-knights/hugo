@@ -52,12 +52,17 @@ jobs:
       - name: Debug
         run: |
           ls -al
-          cat .commitlintrc.js
+          cat commitlint.config.js
           git log --oneline -n 10          
 
-      - name: Run Commitlint
+      - name: Define environment variable with lastest commit's message
         run: |
-          npx commitlint --from=HEAD~1
+          echo 'export COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s")' >> $BASH_ENV
+          source $BASH_ENV
+
+      - name: Lint commit message
+        run: |
+          echo "$COMMIT_MESSAGE" | npx commitlint
 
       - name: Build with Hugo
         env:
