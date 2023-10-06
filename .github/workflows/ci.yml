@@ -111,3 +111,10 @@ jobs:
           aws s3 sync public/ s3://jedi-knights.tech
         env:
           AWS_S3_BUCKET_URL: s3://jedi-knights.tech
+
+      - name: Run Semantic Release
+        run: |
+          npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: success()  # Only run if previous steps were successful
