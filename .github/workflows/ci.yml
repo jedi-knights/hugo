@@ -45,11 +45,11 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Install Node.js dependencies
+      - name: Install Dependencies
         run: |
             npm install
 
-      - name: Lint Commit
+      - name: Run Commitlint
         run: |
           npx commitlint --from=HEAD~1
 

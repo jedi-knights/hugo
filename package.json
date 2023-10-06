@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "npx husky install"
   },
-  "author": "",
+  "author": "Omar Crosby <omar.crosby@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
