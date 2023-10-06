@@ -49,6 +49,12 @@ jobs:
         run: |
             npm install
 
+      - name: Debug
+        run: |
+          ls -al
+          cat .commitlintrc.js
+          git log --oneline -n 10          
+
       - name: Run Commitlint
         run: |
           npx commitlint --from=HEAD~1
