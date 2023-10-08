@@ -8,6 +8,11 @@ How to run the hugo server locally:
 hugo server -D
 ```
 
+or similarly
+```bash
+hugo serve
+```
+
 ## References
 
 - [Hugo](https://gohugo.io/)
