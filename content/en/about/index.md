@@ -1,6 +1,8 @@
 ---
 title: "About"
-description: "A few years ago, while visiting or, rather, rummaging about Notre-Dame, the author of this book found, in an obscure nook of one of the towers, the following word, engraved by hand upon the wall: —ANANKE."
+description: "The collective is a group of individuals with similar thoughts on things we would like to see in the world.
+
+Initially our thoughts came together around technology we would like to see relating to youth Soccer, but as ideas have evolved we have thoughts on lots of other things as well —Omar Crosby."
 featured_image: '/images/Victor_Hugo-Hunchback.jpg'
 menu:
   main:
